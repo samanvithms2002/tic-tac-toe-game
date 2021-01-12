@@ -1,0 +1,112 @@
+#board {
+	padding: 3em;
+	text-align: center;
+	background-color: rgb(17, 17, 17);
+	width: 50%;
+	margin: auto 20% auto 20%;
+	border: 6px double #00a1ab;
+	border-radius: 1em;
+}
+.great {
+	background-color: rgb(180, 241, 243);
+}
+.back {
+	background-color: rgb(17, 17, 17);
+}
+/*selects all cells required for the game */
+.row > div {
+	float: left;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	padding-top: 1.5em;
+	font-family: 'Oxygen', sans-serif;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6,
+		0 0 35px #0073e6;
+	font-weight: 900;
+	font-size: xx-large;
+	cursor: crosshair;
+	animation: fadeIn ease 10s;
+}
+.row {
+	width: 302px;
+	clear: both;
+	overflow: auto;
+	margin: 0 auto;
+}
+.top {
+	border-bottom: 1px #0073e6 solid;
+}
+
+.bottom {
+	border-top: 1px #0073e6 solid;
+}
+.right {
+	border-left: 1px #0073e6 solid;
+}
+.left {
+	border-right: 1px #0073e6 solid;
+}
+h1,
+#info,
+#winstate {
+	color: #0073e6;
+}
+h1 {
+	font-size: xx-large;
+}
+#resetbtn {
+	margin-top: 1em;
+	font-size: 1em;
+	font-weight: 800;
+	color: #0073e6;
+	text-shadow: 0 0 5px #fff, 0 0 15px #0073e6, 0 0 10px #fff;
+	cursor: pointer;
+	padding: 14px 28px;
+	text-align: center;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.row > div {
+		font-size: x-large;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.row > div {
+		font-size: large;
+		height: 70px;
+		width: 50px;
+	}
+	.row {
+		width: 182px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.row > div {
+		font-size: medium;
+		height: 30px;
+		width: 40px;
+	}
+	.row {
+		width: 142px;
+	}
+	#board {
+		margin: 0 5% 0 15%;
+		padding: 1.5em;
+	}
+	h1 {
+		font-size: x-large;
+	}
+	#resetbtn {
+		font-size: 1em;
+	}
+}
